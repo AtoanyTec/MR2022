@@ -16,7 +16,7 @@ void loop()
 void temperatura()
 {
   valt = analogRead(sensort);
-  valtfinal = (valt/5);
+  valtfinal = (5*valt*100/1024);
   Serial.print ("Temperatura = ");
   Serial.println (valtfinal);
 }
